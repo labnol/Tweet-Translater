@@ -1,0 +1,74 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="options.css" type="text/css" media="screen">
+</head>
+<body>
+	<div id="title-bar">Tweet Translater for Twitter.com</div>
+
+	<!-- Setting Area -->
+	<div id="container">
+		<span class="setting_item">1.&nbsp;This extension needs&nbsp;&nbsp;<a href="https://code.google.com/apis/console/"
+				target="_blank">Google apis'</a>&nbsp;&nbsp;access key.</span><br />
+		<span class="helper">API Access > Simple API Access > Key for browser apps > API key:</span>
+		<input id="api-key" type="text" /><br /><br />
+
+		<span class="setting_item">2.&nbsp;To which language do you translate?</span><br />
+		<select id="src-lang">
+			<option value="ar">Arabic</option>
+			<option value="zh">Chinese</option>
+			<option value="en" selected="selected">English</option>
+			<option value="fr">French</option>
+			<option value="el">Greek</option>
+			<option value="it">Italian</option>
+			<option value="ja">Japanese</option>
+			<option value="ko">Korean</option>
+			<option value="pl">Polish</option>
+			<option value="pt">Portuguese</option>
+			<option value="ro">Romanian</option>
+			<option value="es">Spanish</option>
+			<option value="tr">Turkish</option>
+		</select>
+		<span>&nbsp;to&nbsp;</span>
+		<select id="dst-lang">
+			<option value="ar">Arabic</option>
+			<option value="zh">Chinese</option>
+			<option value="en" selected="selected">English</option>
+			<option value="fr">French</option>
+			<option value="el">Greek</option>
+			<option value="it">Italian</option>
+			<option value="ja">Japanese</option>
+			<option value="ko">Korean</option>
+			<option value="pl">Polish</option>
+			<option value="pt">Portuguese</option>
+			<option value="ro">Romanian</option>
+			<option value="es">Spanish</option>
+			<option value="tr">Turkish</option>
+		</select>
+
+		<!-- <div id="btn-save" tabindex="0" style="float: right;margin: 20px 5px 0 0;width: 50px;">save</div> -->
+	</div>
+
+	<!-- Translation Area -->
+	<div class="sub_title">Quick Translater</div>
+	<div id="translate">
+		<textarea id="to-translate" maxlength="230" placeholder="something you want to translate. (up to 230 chars)"
+				  style="height: 80px;"></textarea>
+		<div id="suc-to-translate">Translated have been copied to your clipboard.</div>
+		<!-- <div id="err-to-translate">It is up to 230 characters maximum.</div> -->
+		<div id="btn-exec" tabindex="0" style="float: right;margin: 10px 5px 10px 0;width: 80px;">translate</div>
+		<div style="height: 1px;width: 100%;clear: both;"></div>
+		<!-- <textarea id="translated" readonly></textarea> -->
+	</div>
+
+	<!-- Powerd by -->
+	<span style="margin-left: 150px;line-height: 30px;color: #BBB;font-size: 12px;">Powerd by </span>
+	<div style="margin: 7px 17px 0 0px;float: right;">
+		<a href="http://translate.google.com" target="_blank" tabindex="-1"><img src="translate_logo.gif"></a>
+	</div>
+	<div style="height: 1px;width: 100%;clear: both;"></div>
+
+	<script type="text/javascript" src="jQuery1.8.1.js"></script>
+	<script type="text/javascript" src="options.js"></script>
+</body>
+</html>
